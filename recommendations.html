@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Movies</title>
+</head>
+<body>
+    <h1>Recommended Movies</h1>
+    <table border="1">
+        <tr>
+            <th>Movie ID</th>
+            <th>Title</th>
+        </tr>
+        {% for movie_id, title in recommendations.items() %}
+        <tr>
+            <td>{{ movie_id }}</td>
+            <td>{{ title }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="index.html">Go back</a>
+</body>
+</html>
+
+
